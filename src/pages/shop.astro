@@ -1,7 +1,7 @@
 ---
-import Layout from '../layouts/default.astro';
-import ShopItems from '../components/shop-items.astro';
-import { Cart } from '../components/cart';
+import Layout from '../layouts/default.astro'
+import ShopItems from '../components/shop-items.astro'
+import { Cart } from '../components/cart'
 ---
 
 <Layout>
@@ -10,28 +10,29 @@ import { Cart } from '../components/cart';
 
         <noscript>
             <p>
-                This page requires JavaScript to function properly. Please enable JavaScript in your browser and reload the page.
+                This page requires JavaScript to function properly. Please
+                enable JavaScript in your browser and reload the page.
             </p>
         </noscript>
 
         <div class="products">
             <ShopItems />
-          
-            <Cart client:only="solid-js">
+
+            <Cart client:only="solid-js" />
         </div>
     </div>
-</Layout>
 
-<style>
-    .shop {
-        padding: 3rem 5%;
-    }
-    
-    .products {
-        align-items: flex-start;
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: 1fr 260px;
-        position: relative;
-    } 
-</style>
+    <style>
+        .shop {
+            padding: 3rem 5%;
+        }
+
+        .products {
+            align-items: flex-start;
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr 260px;
+            position: relative;
+        }
+    </style></Layout
+>

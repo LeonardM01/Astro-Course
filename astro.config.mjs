@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config";
-
 import react from "@astrojs/react";
 import solidJs from "@astrojs/solid-js";
 
@@ -13,4 +12,5 @@ export default defineConfig({
     port: 3000,
   },
   integrations: [react(), solidJs()],
+  output: "hybrid",
 });
