@@ -5,7 +5,7 @@ import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astro-bootcamp-leonardm01.netlify.com',
+  site: 'http://sndwch-astro.leonard.solutions/',
   redirects: {
     '/rss': '/rss.xml',
   },
