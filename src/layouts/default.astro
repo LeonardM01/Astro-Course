@@ -29,6 +29,7 @@ const navItems = [
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Make great sandwiches at home with sndwch</title>
+		<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS Feed for sndwch" />
 	</head>
 	<body>
 		<header>
@@ -167,6 +168,7 @@ const navItems = [
 
 	.big-link:hover {
 		background-color: var(--color-gray-800);
+		cursor: pointer;
 	}
 
 	.big-link:is(:active, :focus) {

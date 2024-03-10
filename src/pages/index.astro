@@ -1,7 +1,9 @@
 ---
+import { Image } from 'astro:assets';
+
+import ShopItems from '../components/shop-items.astro';
 import Layout from '../layouts/default.astro';
 import heroImg from '../images/sandwich-hero.jpg';
-import { Image } from 'astro:assets';
 ---
 
 <Layout>
@@ -20,6 +22,13 @@ import { Image } from 'astro:assets';
 			loading="eager"
 			alt="A delicious sandwich on a plate"
 		/>
+	</section>
+
+	<section class="block productsd">
+		<ShopItems count={3} addToCart={false}/>
+		<p class="shop-link">
+			<a href="/shop">Shop All Sandwiche Kit &rarr;</a>
+		</p>
 	</section>
 </Layout>
 
